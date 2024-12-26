@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./myPhoneBook.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/d435d254fd.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <h1> دفترچه تلفن</h1>
+        <form>
+            <input type="text" placeholder="نام و نام خانوادگی" class="input-name">
+            <input type="number" placeholder="شماره" class="input-number">
+
+            <div class="type-selector-parent">
+                <select class="type-selector">
+                    <option value="1">تلفن ثابت</option>
+                    <option value="0">تلفن همراه</option>
+                </select>
+
+                <!-- <button>  -->
+
+
+            </div>
+
+            <button type="submit" class="input-btn"> <i class="fa-solid fa-plus"></i></button>
+
+
+
+
+        </form>
+
+        <!-- item container -->
+        <div class="main-item-container">
+            <div class="filter-div">
+                <select class="filter-select">
+                    <option value="2">همگی</option>
+                    <option value="1">تلفن ثابت</option>
+                    <option value="0">تلفن همراه</option>
+                </select>
+
+
+            </div>
+            <ul class="item-container"></ul>
+
+        </div>
+
+        
+
+
+
+
+
+
+
+        <script src="./myPhoneBook.js"></script>
+
+    </div>
+</body>
+
+</html>

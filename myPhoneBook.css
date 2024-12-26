@@ -1,0 +1,221 @@
+@font-face {
+    font-family: myFont;
+    src: url(./assets/fonts/B\ Nazanin\ Bold_YasDL.com.ttf);
+}
+
+* {
+    font-family: myFont;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 1.5rem;
+
+
+
+}
+
+form {
+    display: flex;
+}
+
+
+form input[type="text"],
+input[type="number"] {
+    padding: 0.5rem;
+    width: 18rem;
+    outline: none;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 1px solid #777777;
+    padding: 0.5rem;
+    font-size: large;
+
+}
+
+button {
+    background-color: #f86c6b;
+    color: white;
+    outline: none;
+    padding: 1rem;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    font-size: large;
+    border: none;
+    transition: all 0.3s;
+    margin-right: 10px;
+    
+
+
+
+
+}
+
+button:hover {
+    background-color: #f86c00;
+}
+
+h1 {
+    margin-bottom: 15vh;
+    margin-top: 10vh;
+}
+
+.type-selector-parent {
+    position: relative;
+    overflow: hidden;
+    /* height:auto; */
+    width: 10rem;
+    /* border: 1px solid black; */
+
+
+}
+
+
+.type-selector-parent::after ,
+.filter-div::after {
+    content: "\25bc";
+    background-color: #f86c6b;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    pointer-events: none;
+    transition: all 0.9s ease;
+
+}
+
+select {
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #777777;
+    padding: 0.5rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.main-item-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+    margin: 1.5rem ;
+
+}
+
+.inner-div-item-container {
+    background-color: antiquewhite;
+    border: 1px solid #777777;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    direction: rtl;
+    transition: all 0.3s ease;
+    /* border: 1px solid black; */
+    margin: 0.5rem;
+    border-radius: 5px ;
+    justify-content: space-between;
+
+
+}
+
+.main-items {
+
+    display: flex;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+    font-size: large;
+    width: 100%;
+    border: 1px solid black;
+    align-items: center;
+    /* margin: 1.5rem; */
+    height: 5vh;
+    /* flex: 1; */
+
+
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 1.5rem;
+    border: 1px solid black;
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 100%;
+    opacity: 1;
+
+
+}
+
+.item-container li  {
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    color: black;
+    /* border: 1px solid black; */
+    
+}
+.trash-btn{
+    
+    background-color: #f86c6b;
+    outline: none;
+    border: none;
+    border-radius: 5px 0px 0px 5px ;
+    /* pointer-events: none ; */
+    
+}
+
+.fa-trash{
+    pointer-events: none;
+}
+
+.fall {
+    transform: translateX(150%) rotate(360deg)  ;
+    opacity: 0;
+    transition: all 4s ease;
+
+}
+
+.filter-div{
+    width: 70%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    display: none;
+
+
+}
+.filter-select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #777777;
+    padding: 0.5rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 5px 5px 0px;
+
+
+
+}
+
